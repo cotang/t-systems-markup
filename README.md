@@ -8,4 +8,4 @@ git clone git@github.com:cotang/t-systems-markup.git .
 
 Для запуска проекта: gulp
 
-Смотри проект на gh-pages: https://cotang.github.io/t-systems-markup
+Проект на gh-pages: https://cotang.github.io/t-systems-markup
