@@ -1,6 +1,6 @@
 Клонируем в текущую папку (точка в конце через пробел):
 
-git clone git@github.com:cotang/kraftvaerk.git .
+git clone git@github.com:cotang/t-systems-markup.git .
 
 Избавляемся от привязки к удаленному репозиторию: git remote rm origin
 
@@ -8,4 +8,4 @@ git clone git@github.com:cotang/kraftvaerk.git .
 
 Для запуска проекта: gulp
 
-Смотри проект на gh-pages: https://cotang.github.io/kraftvaerk
+Смотри проект на gh-pages: https://cotang.github.io/t-systems-markup
