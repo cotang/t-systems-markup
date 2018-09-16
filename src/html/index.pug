@@ -1,0 +1,99 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page
+
+    // Main gallery
+    +b.SECTION.main-gallery
+      +e.slider
+        +e.slide
+          +e.img
+            img(src="img/slide1.jpg", alt="slide1")
+          +e.slide-text
+            .container
+              .row
+                .col-xs-12.col-md-8.offset-md-2
+                  +e.text-wrapper
+                    +e.H2.title Путешествуйте со скоростью света
+                    +e.text Наша компания предоставляет богатый выбор космолётов в личное пользование.
+        +e.slide
+          +e.img
+            img(src="img/slide2.jpg", alt="slide2")
+          +e.slide-text
+            .container
+              .row
+                .col-xs-12.col-md-8.offset-md-2
+                  +e.text-wrapper
+                    +e.H2.title Путешествуйте со скоростью света
+                    +e.text Наша компания предоставляет богатый выбор космолётов в личное пользование.
+      +e.controls-wrapper
+        .container
+          .row
+            .col-xs-12.col-md-8.offset-md-2
+              +e.controls
+
+    // Info
+    +b.SECTION.info
+      .container
+        .row
+          .col-xs-12.col-md-8.offset-md-2
+            +e.text Мы понимаем, что для туризма в ближайшие достопримечательности Вам понадобится транспорт. Мы позаботились об этом. В центре космодрома Вы увидите
+              a(href="#") стойку
+              | . Подойдите к ней для подписания договора и ознакомлением с правилами аренды.
+
+    // Transport
+    +b.SECTION.transport
+      .container
+        .row
+          .col-xs-12.col-md-8.offset-md-2
+            +e.H1.title Наш транспорт
+            +e.table-wrapper
+              +e.TABLE.table
+                +e.THEAD.thead
+                  +e.TR.tr.--tr-thead
+                    +e.TD.td Название
+                    +e.TD.td Длина (метры)
+                    +e.TD.td Скорость (км/ч)
+                    +e.TD.td Команда
+                    +e.TD.td Пассажиры
+                +e.TBODY.tbody
+                  +e.TR.tr
+                    +e.TD.td(data-column='Название') Бонго
+                    +e.TD.td(data-column='Длина (метры)') 15
+                    +e.TD.td(data-column='Скорость (км/ч)') 85
+                    +e.TD.td(data-column='Команда') 1 пилот
+                    +e.TD.td(data-column='Пассажиры') 2
+                  +e.TR.tr
+                    +e.TD.td(data-column='Название') Двухместный аэромобиль
+                    +e.TD.td(data-column='Длина (метры)') 7
+                    +e.TD.td(data-column='Скорость (км/ч)') 1500
+                    +e.TD.td(data-column='Команда') 1 пилот
+                      br
+                      | 1 стрелок
+                    +e.TD.td(data-column='Пассажиры') 1
+                  +e.TR.tr
+                    +e.TD.td(data-column='Название') Джайан-спидер
+                    +e.TD.td(data-column='Длина (метры)') 5,7
+                    +e.TD.td(data-column='Скорость (км/ч)') 160
+                    +e.TD.td(data-column='Команда') 1 пилот
+                      br
+                      | 1 стрелок
+                    +e.TD.td(data-column='Пассажиры') 2
+                  +e.TR.tr
+                    +e.TD.td(data-column='Название') Песчаный краулер
+                    +e.TD.td(data-column='Длина (метры)') 36,5
+                    +e.TD.td(data-column='Скорость (км/ч)') 30
+                    +e.TD.td(data-column='Команда') 50 джав
+                    +e.TD.td(data-column='Пассажиры') 300
+
+    // Attention
+    +b.SECTION.attention
+      .container
+        .row
+          .col-xs-12.col-md-8.offset-md-2
+            +e.wrapper
+              +e.H3.title К Вашему вниманию
+              +e.text При захвате ближлежащих колоний, Вам нужна
+                a(href="#") расширенная страховка
+                |. Не забудьте это уточнить при оформлении аренды.
+

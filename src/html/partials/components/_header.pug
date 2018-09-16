@@ -1,0 +1,30 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  .container
+    +e.wrapper
+      +e.brand
+        +b.A.brand.--header(href="#")
+          +e.SPAN.title Cosmodrom
+            span Mars
+        +e.lang-switcher
+          +b.lang-switcher
+            +e.A.lang(href="#") Ru
+            +e.A.lang.--active(href="#") Eng
+
+      +e.nav
+        +b.NAV.nav
+          +e.hamburger
+            +b.A.hamburger(href="javascript:void(0);")
+              span
+          +e.UL.list
+            +e.item
+              +e.A.link(href="#") О космодроме
+            +e.item.--active
+              +e.A.link(href="#") Аренда транспорта
+            +e.item
+              +e.A.link(href="#") Контакты
+
+
+
